@@ -9,8 +9,8 @@ AnnotationsDict = Dict[str, List[AnnotationEntry]]  # file_id -> list of annotat
 # Parse annotation files
 def parse_annotation_file(filepath: str) -> Generator[AnnotationEntry, None, None]:
     """
-    Parses a single annotation file and yields each entry as a tuple.
-    Expected format per line: term_id, entity start end, text
+    Parses a single annotation file --> get each entry as a tuple.
+    Expected BRAT format per line: term_id, entity start end, text 
     """
     with open(filepath, 'r') as file:
         for line_num, line in enumerate(file, start=1):
@@ -35,7 +35,7 @@ def parse_annotation_file(filepath: str) -> Generator[AnnotationEntry, None, Non
                 print(f"Error parsing line {line_num} in {filepath}: {e}")
                 continue
 
-# Unified function to load annotations from a specified folder
+# Unified function to load annotations from folder (retrieved from args in main.py)
 def load_annotations(folder_path: str) -> AnnotationsDict:
     """
     Loads all .ann annotation files from the specified folder.
@@ -46,6 +46,6 @@ def load_annotations(folder_path: str) -> AnnotationsDict:
         if not filename.endswith('.ann'):  # Only process .ann files
             continue
         filepath = os.path.join(folder_path, filename)
-        file_id = os.path.splitext(filename)[0]  # Use filename without extension as file_id
+        file_id = os.path.splitext(filename)[0]  # remove extension
         annotations[file_id] = list(parse_annotation_file(filepath))
     return annotations
