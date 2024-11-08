@@ -3,8 +3,8 @@ This programme is designed to compare gold standard annotations in brat format w
 
 # HOW TO USE IT?
 Clone the respository.
-Use your Console and run the following once you are in the folder of the programme: 
-$ python3 main.py "your/gold/annotations/folder/path" "your/predictions/annotations/folder/path"
+Use your Console and run the following once you are in the folder of the programme: \
+&nbsp; $ python3 main.py "your/gold/annotations/folder/path" "your/predictions/annotations/folder/path"
 
 # IMPORTANT NOTES
 Input strings must be FOLDER paths with .ann files.
