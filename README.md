@@ -9,7 +9,7 @@ Use your Console and run the following once you are in the folder of the program
 # IMPORTANT NOTES
 Input strings must be FOLDER paths with .ann files.
 These files must keep the same name in both folders (gold and predictions) for the sake of comparison.
-The programme will only compare .ann files, so you can have .conll, .txt and any extension files you want to. They will be ignored in this programme.
+The programme will only compare .ann files, so you can have .conll, .txt and any extension files you want to. They will be ignored by programme.
 
 
 📂 **Gold Standard Annotations Folder**  
