@@ -2,9 +2,6 @@ import argparse
 from utils.compare_anns import compare_annotations_main
 from pathlib import Path 
 
-
-
-
 parser = argparse.ArgumentParser(
                     prog="CompareBratAnnotations",
                     description="This Programme compares two folder paths containing .ann files. One path contains the gold standard annotations, and the other the predictions of a model. The output are some metrics, like F1-Score, Recall and Precision",
@@ -14,7 +11,6 @@ parser.add_argument("gold_folder_path", type=str, help="Path to the gold standar
 parser.add_argument("predictions_folder_path", type=str, help="Path to the model predictions folder")
 
 args = parser.parse_args()
-
 
 
 
