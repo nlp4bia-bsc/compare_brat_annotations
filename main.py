@@ -2,8 +2,6 @@ import argparse
 from utils.compare_anns import compare_annotations_main
 from pathlib import Path 
 
-#gold_folder_path = "/home/lsalas/Desktop/prueba_compare_anns/gold_standard"
-#predictions_folder_path = "/home/lsalas/Desktop/prueba_compare_anns/predictions_v1_igual"
 
 
 
