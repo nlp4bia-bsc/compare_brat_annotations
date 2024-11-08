@@ -11,7 +11,7 @@ Input strings must be FOLDER paths with .ann files.
 These files must keep the same name in both folders (gold and predictions) for the sake of comparison.
 The programme will only compare .ann files, so you can have .conll, .txt and any extension files you want to. They will be ignored by programme.
 
-See sample_input_data
+See sample_input_data. \
 📂 **Gold Standard Annotations Folder**  
 &nbsp;&nbsp;&nbsp;&nbsp;├── file01.ann  
 &nbsp;&nbsp;&nbsp;&nbsp;└── file01.txt  
