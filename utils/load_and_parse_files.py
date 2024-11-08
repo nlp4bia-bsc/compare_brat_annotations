@@ -39,11 +39,12 @@ def parse_annotation_file(filepath: str) -> Generator[AnnotationEntry, None, Non
 def load_annotations(folder_path: str) -> AnnotationsDict:
     """
     Loads all .ann annotation files from the specified folder.
+    ONLY .ANN FILES will be retrieved! Any other extension files will be ignored.
     Returns a dictionary with file_id as keys and lists of annotations as values.
     """
     annotations = {}
     for filename in os.listdir(folder_path):
-        if not filename.endswith('.ann'):  # Only process .ann files
+        if not filename.endswith('.ann'):  #IMPORTANT: Only process .ann files !!
             continue
         filepath = os.path.join(folder_path, filename)
         file_id = os.path.splitext(filename)[0]  # remove extension
