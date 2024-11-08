@@ -58,7 +58,7 @@ Entity Type: SINTOMA
   Recall: 1.0000
   F1 Score: 1.0000
 ---------------------------------
-
+```
 
 # ©️ LICENSE: 
 Cite the source, License Apache 2.0.
