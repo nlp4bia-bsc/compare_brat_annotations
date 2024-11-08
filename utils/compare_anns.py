@@ -14,7 +14,7 @@ def compare_annotations_main(gold_folder_path: str, predictions_folder_path: str
     gold_standard = load_annotations(gold_folder_path)
     predictions = load_annotations(predictions_folder_path)
 
-    print("\n---------------------------------\nINFORMATION on annotations of Gold Standard and Predictions .ann files")
+    print("\n---------------------------------\nINFORMATION on annotations of Gold Standard and Predictions .ann files\n")
     gold_annotation_counts = sum(len(annotations) for annotations in gold_standard.values())
     pred_annotation_counts = sum(len(annotations) for annotations in predictions.values())
     gold_entities = set()
