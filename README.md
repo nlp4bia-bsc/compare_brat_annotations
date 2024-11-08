@@ -11,5 +11,14 @@ Input strings must be FOLDER paths with .ann files.
 These files must keep the same name in both folders (gold and predictions) for the sake of comparison.
 
 
+📂 **Gold Standard Annotations Folder**  
+&nbsp;&nbsp;&nbsp;&nbsp;├── file01.ann  
+&nbsp;&nbsp;&nbsp;&nbsp;└── file01.txt  
+
+📂 **Predicted Annotations Folder**  
+&nbsp;&nbsp;&nbsp;&nbsp;├── file01.ann  
+&nbsp;&nbsp;&nbsp;&nbsp;└── file01.txt  
+
+
 # LICENSE: 
 Cite the source, License Apache 2.0.
