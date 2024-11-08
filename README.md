@@ -21,7 +21,7 @@ See sample_input_data
 &nbsp;&nbsp;&nbsp;&nbsp;└── file01.txt  
 
 # ℹ️ EXPECTED OUTPUT
-
+```
 Starting programme
  Computing metrics for:
 "your/gold/annotations/folder/path" 
@@ -58,8 +58,6 @@ Entity Type: SINTOMA
   Recall: 1.0000
   F1 Score: 1.0000
 ---------------------------------
-
-
 
 
 # ©️ LICENSE: 
