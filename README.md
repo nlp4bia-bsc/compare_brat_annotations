@@ -1,4 +1,4 @@
-# compare_brat_annotations
+# DESCRIPTION
 This programme is designed to compare gold standard annotations in brat format with different predictions.
 
 # HOW TO USE IT?
